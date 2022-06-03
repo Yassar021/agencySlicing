@@ -2,11 +2,11 @@ import { Box, Container, Flex, HStack, Stack, Text, VStack } from "@chakra-ui/re
 
 const About = () => {
     return(
-        <Container pt='66px' maxW='1520px'>
+        <Container pt='66px' maxW='1520px' pb='40px'>
             <Flex direction='row'>
-                <HStack spacing='96px'>
-                    <Box backgroundImage='/bg-about.png' width='753px' height='565px' backgroundSize='contain' backgroundRepeat='no-repeat' />           
-                    <Container>
+                <HStack spacing={{lg:'40px',xl:'96px'}}>
+                    <Box backgroundImage='/bg-about.png' width={{md:'352px',xl:'753px'}} height={{md:'385px',xl:'565px'}} backgroundSize='contain' backgroundRepeat='no-repeat' />           
+                    <Box width={{md:'370px'}}>
                         <Text  mb='16px' fontSize='28px' fontWeight='500'>Nulla lobortis nunc vitae purus facilisis</Text>
                         <Text fontSize='18px'>Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</Text>
                         <HStack textAlign='center' mt='32px'>
@@ -38,7 +38,7 @@ const About = () => {
                                 <Text mt='16.5px' fontSize='24px' fontWeight='500'>Clients</Text>
                             </Box>  
                         </HStack>                      
-                   </Container>
+                   </Box>
                    
                 </HStack>
             </Flex>

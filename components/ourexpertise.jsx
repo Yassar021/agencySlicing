@@ -4,9 +4,9 @@ const OurExpertise = () => {
     return(
         <Container pt='66px' maxW='1520px'>
             <Flex direction='row'>
-                <HStack spacing='96px'>
-                    <Box backgroundImage='/bg-ourexpertise.png' width='753px' height='565px' backgroundSize='contain' backgroundRepeat='no-repeat' />           
-                   <Box pr='80px'>
+                <HStack spacing={{lg:'40px',xl:'96px'}}>
+                    <Box backgroundImage='/bg-ourexpertise.png' width={{md:'352px',xl:'753px'}} height={{md:'385px',xl:'565px'}} backgroundSize='contain' backgroundRepeat='no-repeat' />           
+                   <Box pr='80px' width={{md:'370px'}}>
                         <Box>
                             <Text fontSize='28px' fontWeight='500'>Nulla lobortis nunc vitae purus facilisis</Text>
                             <Text fontSize='18px'>Vestibulum sit amet tortor libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper ultrices. Aenean facilisis vitae purus facilisis semper.</Text>

@@ -5,22 +5,30 @@ const Hero = () => {
         <>
         {/* Navbar */}
         <Container maxW='1520px'>
-            <Box pt='25px' pl='120px' bgImage='/hero-bg.png' backgroundSize='370px' backgroundRepeat='no-repeat' backgroundPosition='top right' > 
-                <Flex direction='row' alignItems='center'>
+            <Box pt='25px' pl={{lg:'20px',xl:'120px'}} bgImage='/hero-bg.png' backgroundSize='370px' backgroundRepeat='no-repeat' backgroundPosition='top right' > 
+                <Flex direction='row' alignItems='center' justify='space-between'>
                     <Stack direction='row' alignItems='center'>
                         <Image ml='8px' src="/logo.png" width='46px' height='46px' alt=""></Image>
                         <Text fontSize='24px' fontWeight='500'>Agency</Text>
                     </Stack>
-                    <HStack direction='row' spacing='32px' ml='64px'>
+                    <HStack direction='row' spacing={{md:'8px',xl:'32px'}} justifyItems='center' ml='64px'>
                         <Box borderBottom='2px solid #2196F3' >
                             <Text fontSize='18px' fontWeight='500' color='#2196F3'>Agency</Text>
                         </Box>
-                        <Text fontSize='18px' fontWeight='500'>Our Values</Text>
-                        <Text fontSize='18px' fontWeight='500'>Case Studies</Text>
-                        <Text fontSize='18px' fontWeight='500'>Blog</Text>
-                        <Text fontSize='18px' fontWeight='500'>Inner Pages</Text>
+                        <Box width='112px'>
+                            <Text fontSize='18px' fontWeight='500'>Our Values</Text>
+                        </Box>
+                        <Box width='112px'>
+                            <Text fontSize='18px' fontWeight='500'>Case Studies</Text>
+                        </Box>
+                        <Box width='56px' mx='auto'>
+                            <Text fontSize='18px' fontWeight='500'>Blog</Text>
+                        </Box>
+                        <Box width='112px' mx='auto'>
+                            <Text fontSize='18px' fontWeight='500'>Inner Pages</Text>
+                        </Box>
                     </HStack>
-                    <Stack direction='row' alignItems='center' ml='232px' spacing='28px'>
+                    <Stack direction='row' alignItems='center' ml={{lg:'20px',xl:'232px'}} spacing='28px'>
                         <Text fontSize='16px' fontWeight='500'>LOGIN</Text>
                         <Button
                             size='md'
@@ -81,7 +89,7 @@ const Hero = () => {
         </Container>
 
         <Container  maxW='1520px'>
-            <Box px='191px' mt='56px'>
+            <Box px={{md:'10px',xl:'191px'}} mt='56px'>
                 <Stack direction='row' spacing='32px'>
                     <Box shadow='lg' p='40px'>
                         <Text fontSize='24px' fontWeight='500' color='#2196F3'>Business Solution</Text>

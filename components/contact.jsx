@@ -2,8 +2,8 @@ import { Box, Button, Flex, HStack, Text, VStack } from "@chakra-ui/react"
 
 const Contact = () => {
     return(
-        <Box  maxWidth='1540px' px='112px' py='120px'> 
-            <Box borderRadius='24px' width='1215px' height='168.21px' bgColor='#2196F3' py='24px' px='74px'>
+        <Box  maxWidth='1540px' px={{lg:'65px',xl:'112px'}} py='120px'> 
+            <Box borderRadius='24px' width={{lg:'885px',xl:'1215px'}} height='168.21px' bgColor='#2196F3' mx='auto' my='auto' py='24px' px='74px'>
                 <Flex direction='row' justifyContent='space-between'>
                     <Box>
                         <Text fontSize='32px' fontWeight='700' color='#fff'>Ready to get started ?</Text>
